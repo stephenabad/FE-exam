@@ -6,7 +6,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" type="text/css" href="./styles.css"/>
     </head>
-    <body>
+    <body onload="generateOtherCategories()">
         <nav class="navbar">
             <div>
                 <a class="navbar-brand" href="#">
@@ -33,6 +33,27 @@
                 </div>
             </div>
         </nav>
+        <!-- Other Categories Modal-->
+        <div id="mod-other-categories" class="modal">
+            <div class="modal-content"><div>
+                <div style="float: right; height: 20px; width: 20px; margin-top: -30px;">
+                    <span id="mocCloseBtn" class="close">&times;</span>
+                </div>
+                <div style="float: left;">
+                    <p style="font-family: Gotham-Medium; font-size: 21px; margin-bottom: 0">OTHER CATEGORIES</p>
+                    <p style="font-family: Gotham-Book; font-size: 18px;">Choose the category that best fits your case</p>
+                </div>
+            </div>
+                <!-- Dynamically generated through-->
+                <div class="other-category-list">
+                    <ul id="otherCategoryList">
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
         <div class="main-scope">
             <div style="width: 100%; margin: 0 auto;">
             <div>
@@ -127,8 +148,8 @@
                     </div>
                 </div>
             </div>             
-            <div style="padding-left: 50px;">
-                <span style="font-family: Gotham-Book; font-size: 18px;">Can't find your category? <a href="#" style="color:white">Click here.</a></span>
+            <div style="padding-left: 80px;">
+                <span style="font-family: Gotham-Book; font-size: 18px;">Can't find your category? <button id="other-cat-mod-btn"class="modal-btn">Click here.</button></span>
             </div>
         </div>
         </div>
@@ -164,5 +185,7 @@
                 </div>
             </div>
         </div>
+
+        <script src="./js/app.js"></script> 
     </body>
 </html>

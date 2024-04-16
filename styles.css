@@ -3,12 +3,109 @@
     src: url('./assets/fonts/Gotham Medium.otf');
 }
 
+@font-face {
+    font-family: Gotham-Light;
+    src: url('./assets/fonts/Gotham Light.otf');
+}
+
+@font-face {
+    font-family: Gotham-Book;
+    src: url('./assets/fonts/Gotham Light.otf');
+}
+
 .navbar{
-    background-color:gray;
-    padding: 15px;
+    padding-left: 10%;
+    padding-right: 10%;
+    background-color: white;
+    font-family: 'Gotham-Medium';
 }
 
 .header-message{
+    color: #002868;
+    font-weight: bold;
+}
+
+.header-guarantees{
+    font-size: 15px
+}
+
+.main-scope{
+    padding-left: 10%;
+    padding-right: 10%;
+    background:#032c6b;
+    background: radial-gradient(60% 90% at bottom, rgba(43,166,224,1), rgba(3,44,107,1) 70%);
+    padding-bottom: 15%;
+    color: white;
+}
+
+.input-form{
+    width: 50%;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    float: left;
+    font-size: 18px;
+}
+
+.review-section{
+    font-family: 'Gotham-Book';
+    font-size: 18px;
+    float: right;
+    width: 50%;
+}
+
+.review-item{
+    text-align: center;
+    padding-top: 40px;
+}
+
+.review-img img{
+    display: block;
+    margin: 0 auto;
+    height: 85px;
+    padding-bottom: 5px;
+}
+
+.review-img{
+    float: left;
+    padding-right: 30px;
+}
+
+.review-details{
     text-align: left;
+}
+
+.lawyer-name{
     font-family: 'Gotham-Medium';
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.lawyer-loc{
+    font-family: 'Gotham-Medium';
+    font-size: 15px;
+    color: #dadada;
+}
+
+.law-category{
+    font-family: 'Gotham-Medium';
+    font-weight: bold;
+    padding-right: 30px;
+}
+
+.review-text{
+    font-family: 'Gotham-Book';
+    font-style: italic;
+    padding-top: 15px;
+}
+
+.read-review{
+    float: right;
+    font-family: Gotham-Book;
+    color: #fbd243
+}
+
+.read-review img{
+    height: 15px;
+    padding-left: 5px;
 }

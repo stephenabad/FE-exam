@@ -10,7 +10,7 @@
 
 @font-face {
     font-family: Gotham-Book;
-    src: url('./assets/fonts/Gotham Light.otf');
+    src: url('./assets/fonts/Gotham Book.otf');
 }
 
 .navbar{
@@ -55,7 +55,7 @@
 
 .review-item{
     text-align: center;
-    padding-top: 40px;
+    padding-top: 20px;
 }
 
 .review-img img{
@@ -68,6 +68,7 @@
 .review-img{
     float: left;
     padding-right: 30px;
+    width: 150px;
 }
 
 .review-details{
@@ -85,6 +86,7 @@
     font-family: 'Gotham-Medium';
     font-size: 15px;
     color: #dadada;
+    width: 100%;
 }
 
 .law-category{
@@ -108,4 +110,73 @@
 .read-review img{
     height: 15px;
     padding-left: 5px;
+}
+
+.user-input{
+    position: relative;
+}
+
+.user-input input{
+    border-radius: 40px;
+    height: 70px;
+    width: 60%;
+    display: block;
+    box-sizing: border-box;
+    border: none;
+    padding-left: 5rem;
+    font-family: 'Gotham-Book';
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.user-input div{
+    position: absolute;
+    top: 17px;
+    left: 2%;
+}
+
+.user-input select{
+    border-radius: 40px;
+    height: 70px;
+    width: 60%;
+    display: block;
+    box-sizing: border-box;
+    border: none;
+    padding-left: 5rem;
+    font-family: 'Gotham-Book';
+    font-weight: bold;
+    font-size: 15px;
+    color: #747474
+}
+
+.number-circle{
+    width: 35px;
+    line-height: 35px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    background-color: #d68d00;
+}
+
+.flex-container{
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    align-content: center;
+}
+
+.footer-details{
+    display: flex;
+    justify-content: center;
+}
+
+.footer-links{
+    font-family: 'Gotham-Book';
+    font-size: 18px;
+    color: #919aa2
 }

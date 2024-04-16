@@ -18,6 +18,11 @@
     padding-right: 10%;
     background-color: white;
     font-family: 'Gotham-Medium';
+    height: 70px;
+}
+
+.navbar-brand{
+    text-decoration: none;
 }
 
 .header-message{
@@ -36,7 +41,7 @@
     background: radial-gradient(60% 90% at bottom, rgba(43,166,224,1), rgba(3,44,107,1) 70%);
     padding-bottom: 15%;
     color: white;
-    height: 800px;
+    height: 600px;
 }
 
 .input-form{
@@ -257,6 +262,7 @@
     overflow: hidden;
     overflow-y: scroll;
     list-style-position: inside;
+    height: 250px;
 }
 
 .other-category-list li{

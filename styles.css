@@ -126,7 +126,7 @@
 .user-input input{
     border-radius: 40px;
     height: 70px;
-    width: 60%;
+    width: 400px;
     display: block;
     box-sizing: border-box;
     border: none;
@@ -145,7 +145,7 @@
 .user-input select{
     border-radius: 40px;
     height: 70px;
-    width: 60%;
+    width: 400px;
     display: block;
     box-sizing: border-box;
     border: none;

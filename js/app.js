@@ -16,9 +16,9 @@ window.onclick = function(event){
     }
 }
 
-function generateOtherCategories(){
+function generateCategories(){
     const categoryDiv = document.getElementById("otherCategoryList");
-    const otherCategories = [
+    const otherCategoriesArr = [
         "Abuse (Child, Domestic, Sexual)", "Agencies & Administration", "Automobile (DUI, Crimes, Speeding)",
         "Automobiles (Accidents, Insurance)", "Banking (Business, Consumer)", "Bars & Restaurants",
         "Business Formation & Dissolution", "Children (Adoption, Custody, Support)", "Class Actions (Bad Drugs, Products)",
@@ -31,9 +31,23 @@ function generateOtherCategories(){
         "Vivamus scelerisque tellus", "Phasellus sed", "Curabitur eu", "Proin sodales",
         "Vestibulum sit amet", "Etiam eleifend", "Cras malesuada nisi", "Aenean", "Nunc eget augue"
     ];
-    for (var i = 0; i < otherCategories.length; i++){
+    for (var i = 0; i < otherCategoriesArr.length; i++){
         var newCategory = document.createElement('li');
-        newCategory.append(otherCategories[i]);
+        newCategory.append(otherCategoriesArr[i]);
         categoryDiv.appendChild(newCategory);
+    }
+
+    const legalCategoryElem = document.getElementById("legalCategories");
+    const legalCategoriesArr = [
+        "Family", "Criminal Defense", "Business", "Personal Injury", "Bankruptcy & Finances",
+        "Products & Services", "Employement", "Real Estate", "Immigration", "Wills, Trusts & Estates",
+        "Government", "Intellectual Property"
+    ]
+
+    for (var i = 0; i < legalCategoriesArr.length; i++){
+        var newCategory = document.createElement('option');
+        newCategory.className = "selected-items";
+        newCategory.append(legalCategoriesArr[i]);
+        legalCategoryElem.appendChild(newCategory);
     }
 }

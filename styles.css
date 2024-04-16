@@ -36,6 +36,7 @@
     background: radial-gradient(60% 90% at bottom, rgba(43,166,224,1), rgba(3,44,107,1) 70%);
     padding-bottom: 15%;
     color: white;
+    height: 800px;
 }
 
 .input-form{
@@ -147,6 +148,12 @@
     font-weight: bold;
     font-size: 15px;
     color: #747474
+}
+
+.selected-items{
+    font-family: 'Gotham-Book';
+    font-size: 15px;
+    color: #747474;
 }
 
 .number-circle{

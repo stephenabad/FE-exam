@@ -1,0 +1,14 @@
+@font-face {
+    font-family: Gotham-Medium;
+    src: url('./assets/fonts/Gotham Medium.otf');
+}
+
+.navbar{
+    background-color:gray;
+    padding: 15px;
+}
+
+.header-message{
+    text-align: left;
+    font-family: 'Gotham-Medium';
+}

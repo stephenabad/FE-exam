@@ -205,6 +205,49 @@
             </div>
         </div>
 
+        <!-- Find Lawyer Modal-->
+        <div id="mod-find-lawyer" class="modal">
+            <div class="modal-content" style="height: 350px;">
+                <div>
+                    <div style="float: right; height: 20px; width: 20px; margin-top: -30px;">
+                        <span id="flCloseBtn" class="close">&times;</span>
+                    </div>
+                    <div>
+                        <div style="margin-right: 36%;">
+                            <span style="font-family: Gotham-Book; font-size: 15px; color:#474747; float: right; padding-top: 5px;">Which <span style="font-weight: bold;">Family law</span> issue(s) apply to your case?</span>
+                        </div>
+                    <div class="number-circle">3</div>
+                    </div>
+                    <div style="padding-top: 15px;">
+                        <div class="criteria" style="float: left">
+                            <input type="checkbox" id="criteria1" name="criteria1" value="">
+                            <label for="criteria1">Adoptions</label><br/>
+                            <input type="checkbox" id="criteria2" name="criteria2" value="">
+                            <label for="criteria2">Guardianship</label><br/>
+                            <input type="checkbox" id="criteria3" name="criteria3" value="">
+                            <label for="criteria3">Child Custody and Visitation</label><br/>
+                            <input type="checkbox" id="criteria4" name="criteria4" value="">
+                            <label for="criteria4">Paternity</label><br/>
+                        </div>
+                        <div class="criteria" style="float: right; margin-right: 10%;">
+                            <input type="checkbox" id="criteria5" name="criteria5" value="">
+                            <label for="criteria5">Child Support</label><br/>
+                            <input type="checkbox" id="criteria6" name="criteria6" value="">
+                            <label for="criteria6">Separations</label><br/>
+                            <input type="checkbox" id="criteria7" name="criteria7" value="">
+                            <label for="criteria7">Divorce</label><br/>
+                            <input type="checkbox" id="criteria8" name="criteria8" value="">
+                            <label for="criteria8">Spousal Support or Alimony</label><br/>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div style="text-align: center; padding-top: 60px;">
+                    <button class="find-lawyer-btn">FIND A LAWYER NOW</button>
+                </div>
+            </div>
+        </div>
+
         <!-- Main body -->
         <div class="main-scope">
             <div style="width: 100%; margin: 0 auto;">
@@ -217,6 +260,7 @@
                 </div>
             </div>
             <div class="input-form">
+                <!-- Enter Zip Code or City-->
                 <div style="padding-bottom: 30px;">
                     <div style="padding-bottom: 10px;">
                         <span style="font-family: Gotham-Medium;">Enter Zip Code or City:</span>
@@ -226,13 +270,14 @@
                         <input type="text" placeholder="Does not have to be where you live"/>
                     </div>
                 </div>
+                <!-- Choose a Category-->
                 <div>
                     <div style="padding-bottom: 10px;">
                         <span style="font-family: Gotham-Medium;">Choose a category:</span>
                     </div>
                     <div class="user-input">
                         <div class="number-circle">2</div>
-                        <select id="legalCategories" class="test">
+                        <select id="legalCategories" class="test" onchange="findLawyerModal()">
                             <option value="" selected disabled hidden>Click to choose a legal category</option>
                         </select>
                     </div>

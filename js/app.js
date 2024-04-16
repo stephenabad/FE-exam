@@ -5,6 +5,9 @@ var mocCloseBtn = document.getElementById("mocCloseBtn");
 var modalReadReview = document.getElementById("mod-review-details");
 var rdCloseBtn = document.getElementById("rdCloseBtn");
 
+var modalFindLawyer = document.getElementById("mod-find-lawyer");
+var flCloseBtn = document.getElementById("flCloseBtn");
+
 mocBtn.onclick = function() {
     modalOtherCat.style.display = "block";
 }
@@ -17,11 +20,17 @@ rdCloseBtn.onclick = function(){
     modalReadReview.style.display = "none";
 }
 
+flCloseBtn.onclick = function(){
+    modalFindLawyer.style.display = "none";
+}
+
 window.onclick = function(event){
     if(event.target == modalOtherCat){
         modalOtherCat.style.display = "none";
     } else if (event.target == modalReadReview){
         modalReadReview.style.display = "none";
+    } else if (event.target == modalFindLawyer){
+        modalFindLawyer.style.display = "none";
     }
 }
 
@@ -62,6 +71,7 @@ function generateCategories(){
 }
 
 function readReview(lawyer) {
+    //Initialize values
     if(lawyer === 'Mitchell'){
         document.getElementById('lawyerImage').src = "./assets/images/Mitchell.png";
         document.getElementById('reviewLawyerName').innerText = 'Mitchell M.';
@@ -78,7 +88,11 @@ function readReview(lawyer) {
         document.getElementById('reviewLawyerLoc').innerText = 'Dallas, TX';
         document.getElementById('reviewLawyerPrac').innerText = 'Family Law';
     }
-    
-
+    //Show modal
     modalReadReview.style.display = "block";
+}
+
+function findLawyerModal(){
+    
+    modalFindLawyer.style.display = "block";
 }

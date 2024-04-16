@@ -171,6 +171,7 @@
     font-weight: bold;
     border: none;
     background-color: #d68d00;
+    color: white;
 }
 
 .flex-container{
@@ -277,4 +278,24 @@
     font-size: 14px;
     color: #979da3;
     margin: 0;
+}
+
+.criteria{
+    font-family: 'Gotham-Book';
+    font-size: 14px;
+    color: #474747;
+}
+
+.criteria label{
+    margin: 5px;
+}
+
+.find-lawyer-btn{
+    font-family: 'Gotham-Medium';
+    font-size: 16px;
+    color: white;
+    background-color:#02377b;
+    border-radius: 25px;
+    height: 50px;
+    width: 250px;
 }

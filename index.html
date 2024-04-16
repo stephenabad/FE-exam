@@ -44,7 +44,7 @@
                     <p style="font-family: Gotham-Book; font-size: 18px;">Choose the category that best fits your case</p>
                 </div>
             </div>
-                <!-- Dynamically generated through-->
+                <!-- Dynamically generated using JS-->
                 <div class="other-category-list">
                     <ul id="otherCategoryList">
 
@@ -53,7 +53,159 @@
             </div>
         </div>
 
+        <!-- Review Details Modal-->
+        <div id="mod-review-details" class="modal">
+            
+            <div class="modal-content" style="overflow-y:scroll;"><div>
+                <div style="float: right; height: 20px; width: 20px; margin-top: -30px;">
+                    <span id="rdCloseBtn" class="close">&times;</span>
+                </div>
+                <div style="float: left;">
+                    <p style="font-family: Gotham-Medium; font-size: 21px; margin-bottom: 0">CLIENT REVIEWS</p>
+                </div>
+                <hr style="margin-top: 2rem;"/>
+            </div>
+                <!-- Review details go here -->
+                <div>
+                    <div style="float: left; margin-right: 25px;">
+                        <img style="width: 115%" id="lawyerImage" src=""/>
+                    </div>
+                    <div>
+                        <p id="reviewLawyerName" class="review-initials"></p>
+                        <p id="reviewLawyerLoc" class="review-location"></p>
+                        <p id="reviewLawyerPrac" class="review-location" style="color: black;"></p>
+                    </div>
+                </div>
+                <div style="margin-top: 1rem;">
+                    <span style="font-family: Gotham-Book; font-size: 15px;">Rating (29 users)</span>
+                    <i class="fa fa-star checked" style="color: #d89108"></i>
+                    <i class="fa fa-star checked" style="color: #d89108"></i>
+                    <i class="fa fa-star checked" style="color: #d89108"></i>
+                    <i class="fa fa-star checked" style="color: #d89108"></i>
+                    <i class="fa fa-star checked" style="color: gray"></i>
+                </div>
+                <hr style="margin: 0 0 1rem 0;"/>
+                <div>
+                    <div>
+                        <span style="font-family: Gotham-Book; color: black; font-size: 15px;">Overall</span>
+                        <div style="display:inline; float:right; margin-right: 40px;">
+                            <i class="fa fa-star checked" style="color: #d89108"></i>
+                            <i class="fa fa-star checked" style="color: #d89108"></i>
+                            <i class="fa fa-star checked" style="color: #d89108"></i>
+                            <i class="fa fa-star checked" style="color: #d89108"></i>
+                            <i class="fa fa-star checked" style="color: gray"></i>
+                        </div>
+                    </div>
+                    <div>
+                        <span style="font-family: Gotham-Book; color: #474747; font-size: 15px;">Responded in a timely manner</span>
+                        <div style="display:inline; float:right; margin-right: 40px;">
+                            <i class="fa fa-star checked" style="color: #d89108"></i>
+                            <i class="fa fa-star checked" style="color: #d89108"></i>
+                            <i class="fa fa-star checked" style="color: #d89108"></i>
+                            <i class="fa fa-star checked" style="color: #d89108"></i>
+                            <i class="fa fa-star checked" style="color: #d89108"></i>
+                        </div>
+                    </div>
+                    <div>
+                        <span style="font-family: Gotham-Book; color: #474747; font-size: 15px;">Answered questions clearly</span>
+                        <div style="display:inline; float:right; margin-right: 40px;">
+                            <i class="fa fa-star checked" style="color: #d89108"></i>
+                            <i class="fa fa-star checked" style="color: #d89108"></i>
+                            <i class="fa fa-star checked" style="color: #d89108"></i>
+                            <i class="fa fa-star checked" style="color: #d89108"></i>
+                            <i class="fa fa-star checked" style="color: #d89108"></i>
+                        </div>
+                    </div>
+                    <div>
+                        <span style="font-family: Gotham-Book; color: #474747; font-size: 15px;">Gave complete and clear information</span>
+                        <div style="display:inline; float:right; margin-right: 40px;">
+                            <i class="fa fa-star checked" style="color: #d89108"></i>
+                            <i class="fa fa-star checked" style="color: #d89108"></i>
+                            <i class="fa fa-star checked" style="color: #d89108"></i>
+                            <i class="fa fa-star checked" style="color: #d89108"></i>
+                            <i class="fa fa-star checked" style="color: gray"></i>
+                        </div>
+                    </div>
+                    <div>
+                        <span style="font-family: Gotham-Book; color: #474747; font-size: 15px;">Knowledgeable in legal area</span>
+                        <div style="display:inline; float:right; margin-right: 40px;">
+                            <i class="fa fa-star checked" style="color: #d89108"></i>
+                            <i class="fa fa-star checked" style="color: #d89108"></i>
+                            <i class="fa fa-star checked" style="color: #d89108"></i>
+                            <i class="fa fa-star checked" style="color: #d89108"></i>
+                            <i class="fa fa-star checked" style="color: #d89108"></i>
+                        </div>
+                    </div>
+                    <div>
+                        <span style="font-family: Gotham-Book; color: #474747; font-size: 15px;">Good value for money</span>
+                        <div style="display:inline; float:right; margin-right: 40px;">
+                            <i class="fa fa-star checked" style="color: #d89108"></i>
+                            <i class="fa fa-star checked" style="color: #d89108"></i>
+                            <i class="fa fa-star checked" style="color: #d89108"></i>
+                            <i class="fa fa-star checked" style="color: #d89108"></i>
+                            <i class="fa fa-star checked" style="color: gray"></i>
+                        </div>
+                    </div>
+                    <div>
+                        <span style="font-family: Gotham-Book; color: #474747; font-size: 15px;">Would hire again</span>
+                        <div style="display:inline; float:right; margin-right: 40px;">
+                            <i class="fa fa-star checked" style="color: #d89108"></i>
+                            <i class="fa fa-star checked" style="color: #d89108"></i>
+                            <i class="fa fa-star checked" style="color: #d89108"></i>
+                            <i class="fa fa-star checked" style="color: #d89108"></i>
+                            <i class="fa fa-star checked" style="color: gray"></i>
+                        </div>
+                    </div>
+                    <div>
+                        <span style="font-family: Gotham-Book; color: #474747; font-size: 15px;">Would recommend to a friend</span>
+                        <div style="display:inline; float:right; margin-right: 40px;">
+                            <i class="fa fa-star checked" style="color: #d89108"></i>
+                            <i class="fa fa-star checked" style="color: #d89108"></i>
+                            <i class="fa fa-star checked" style="color: #d89108"></i>
+                            <i class="fa fa-star checked" style="color: #d89108"></i>
+                            <i class="fa fa-star checked" style="color: #d89108"></i>
+                        </div>
+                    </div>
+                </div>
+                <hr style="margin-bottom: 1rem;"/>
+                <!-- Individual Reviews-->
+                <div style="margin-bottom: 1rem;">
+                    <i class="fa fa-star checked" style="color: #d89108"></i>
+                    <i class="fa fa-star checked" style="color: #d89108"></i>
+                    <i class="fa fa-star checked" style="color: #d89108"></i>
+                    <i class="fa fa-star checked" style="color: #d89108"></i>
+                    <i class="fa fa-star checked" style="color: #d89108"></i>
+                    <span style="font-family: Gotham-Book; font-weight: bold; font-size: 15px;">by Dexter Marchal, 06/10/2016</span>
+                    <div>
+                        <span style="font-family: Gotham-Book; font-size: 15px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eu eros id urna tincidunt laoreet non ac augue. Nullam dapibus eu risus et congue.</span>
+                    </div>
+                </div>
+                <div style="margin-bottom: 1rem;">
+                    <i class="fa fa-star checked" style="color: #d89108"></i>
+                    <i class="fa fa-star checked" style="color: #d89108"></i>
+                    <i class="fa fa-star checked" style="color: #d89108"></i>
+                    <i class="fa fa-star checked" style="color: #d89108"></i>
+                    <i class="fa fa-star checked" style="color: #d89108"></i>
+                    <span style="font-family: Gotham-Book; font-weight: bold; font-size: 15px;">by Dexter Marchal, 06/10/2016</span>
+                    <div>
+                        <span style="font-family: Gotham-Book; font-size: 15px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eu eros id urna tincidunt laoreet non ac augue. Nullam dapibus eu risus et congue.</span>
+                    </div>
+                </div>
+                <div style="margin-bottom: 1rem;">
+                    <i class="fa fa-star checked" style="color: #d89108"></i>
+                    <i class="fa fa-star checked" style="color: #d89108"></i>
+                    <i class="fa fa-star checked" style="color: #d89108"></i>
+                    <i class="fa fa-star checked" style="color: #d89108"></i>
+                    <i class="fa fa-star checked" style="color: #d89108"></i>
+                    <span style="font-family: Gotham-Book; font-weight: bold; font-size: 15px;">by Dexter Marchal, 06/10/2016</span>
+                    <div>
+                        <span style="font-family: Gotham-Book; font-size: 15px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eu eros id urna tincidunt laoreet non ac augue. Nullam dapibus eu risus et congue.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
 
+        <!-- Main body -->
         <div class="main-scope">
             <div style="width: 100%; margin: 0 auto;">
             <div>
@@ -96,15 +248,15 @@
                     </div>
                     <div class="review-details">
                         <span class="law-category">Family Law</span>
-                        <span class="fa fa-star checked" style="color: #d89108"></span>
-                        <span class="fa fa-star checked" style="color: #d89108"></span>
-                        <span class="fa fa-star checked" style="color: #d89108"></span>
-                        <span class="fa fa-star checked" style="color: #d89108"></span>
-                        <span class="fa fa-star checked" style="color: #d89108"></span>
+                        <i class="fa fa-star checked" style="color: #d89108"></i>
+                        <i class="fa fa-star checked" style="color: #d89108"></i>
+                        <i class="fa fa-star checked" style="color: #d89108"></i>
+                        <i class="fa fa-star checked" style="color: #d89108"></i>
+                        <i class="fa fa-star checked" style="color: #d89108"></i>
                         <p class="review-text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vitae convallis sapien. Vestibulum risus quam, scelerisque quis... </p>
                     </div>
                     <div class="read-review">
-                        <span>Read Review</span><img src="./assets/images/book_icon.png">
+                        <span onclick="readReview('Mitchell')">Read Review</span><img src="./assets/images/book_icon.png">
                     </div>
                 </div>
                 <div><hr style="margin-top: 4rem"></div>
@@ -116,15 +268,15 @@
                     </div>
                     <div class="review-details">
                         <span class="law-category">Job & Employement Law</span>
-                        <span class="fa fa-star checked" style="color: #d89108"></span>
-                        <span class="fa fa-star checked" style="color: #d89108"></span>
-                        <span class="fa fa-star checked" style="color: #d89108"></span>
-                        <span class="fa fa-star checked" style="color: #d89108"></span>
-                        <span class="fa fa-star checked" style="color: #d89108"></span>
+                        <i class="fa fa-star checked" style="color: #d89108"></i>
+                        <i class="fa fa-star checked" style="color: #d89108"></i>
+                        <i class="fa fa-star checked" style="color: #d89108"></i>
+                        <i class="fa fa-star checked" style="color: #d89108"></i>
+                        <i class="fa fa-star checked" style="color: #d89108"></i>
                         <p class="review-text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vitae convallis sapien. Vestibulum risus quam, scelerisque quis... </p>
                     </div>
                     <div class="read-review">
-                        <span>Read Review</span><img src="./assets/images/book_icon.png">
+                        <span onclick="readReview('Joel')">Read Review</span><img src="./assets/images/book_icon.png">
                     </div>
                 </div>
                 <div><hr style="margin-top: 4rem"></div>
@@ -136,20 +288,20 @@
                     </div>
                     <div class="review-details">
                         <span class="law-category">Family Law</span>
-                        <span class="fa fa-star checked" style="color: #d89108"></span>
-                        <span class="fa fa-star checked" style="color: #d89108"></span>
-                        <span class="fa fa-star checked" style="color: #d89108"></span>
-                        <span class="fa fa-star checked" style="color: #d89108"></span>
-                        <span class="fa fa-star checked" style="color: #d89108"></span>
+                        <i class="fa fa-star checked" style="color: #d89108"></i>
+                        <i class="fa fa-star checked" style="color: #d89108"></i>
+                        <i class="fa fa-star checked" style="color: #d89108"></i>
+                        <i class="fa fa-star checked" style="color: #d89108"></i>
+                        <i class="fa fa-star checked" style="color: #d89108"></i>
                         <p class="review-text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vitae convallis sapien. Vestibulum risus quam, scelerisque quis... </p>
                     </div>
                     <div class="read-review">
-                        <span>Read Review</span><img src="./assets/images/book_icon.png">
+                        <span onclick="readReview('Brigida')">Read Review</span><img src="./assets/images/book_icon.png">
                     </div>
                 </div>
             </div>             
             <div style="padding-left: 80px;">
-                <span style="font-family: Gotham-Book; font-size: 18px;">Can't find your category? <button id="other-cat-mod-btn"class="modal-btn">Click here.</button></span>
+                <span style="font-family: Gotham-Book; font-size: 18px;">Can't find your category? <button id="other-cat-mod-btn"class="oc-modal-btn">Click here.</button></span>
             </div>
         </div>
         </div>

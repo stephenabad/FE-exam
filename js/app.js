@@ -2,6 +2,9 @@ var modalOtherCat = document.getElementById("mod-other-categories");
 var mocBtn = document.getElementById("other-cat-mod-btn");
 var mocCloseBtn = document.getElementById("mocCloseBtn");
 
+var modalReadReview = document.getElementById("mod-review-details");
+var rdCloseBtn = document.getElementById("rdCloseBtn");
+
 mocBtn.onclick = function() {
     modalOtherCat.style.display = "block";
 }
@@ -10,9 +13,15 @@ mocCloseBtn.onclick = function(){
     modalOtherCat.style.display = "none";
 }
 
+rdCloseBtn.onclick = function(){
+    modalReadReview.style.display = "none";
+}
+
 window.onclick = function(event){
     if(event.target == modalOtherCat){
         modalOtherCat.style.display = "none";
+    } else if (event.target == modalReadReview){
+        modalReadReview.style.display = "none";
     }
 }
 
@@ -50,4 +59,26 @@ function generateCategories(){
         newCategory.append(legalCategoriesArr[i]);
         legalCategoryElem.appendChild(newCategory);
     }
+}
+
+function readReview(lawyer) {
+    if(lawyer === 'Mitchell'){
+        document.getElementById('lawyerImage').src = "./assets/images/Mitchell.png";
+        document.getElementById('reviewLawyerName').innerText = 'Mitchell M.';
+        document.getElementById('reviewLawyerLoc').innerText = 'Cherry Hill, NJ';
+        document.getElementById('reviewLawyerPrac').innerText = 'Family Law';
+    } else if (lawyer === 'Joel'){
+        document.getElementById('lawyerImage').src = "./assets/images/Joel.png";
+        document.getElementById('reviewLawyerName').innerText = 'Joel C.';
+        document.getElementById('reviewLawyerLoc').innerText = 'Little Rock, AK';
+        document.getElementById('reviewLawyerPrac').innerText = 'Job & Employment Law';
+    } else if (lawyer === 'Brigida'){
+        document.getElementById('lawyerImage').src = "./assets/images/Brigida.png";
+        document.getElementById('reviewLawyerName').innerText = 'Brigida R.';
+        document.getElementById('reviewLawyerLoc').innerText = 'Dallas, TX';
+        document.getElementById('reviewLawyerPrac').innerText = 'Family Law';
+    }
+    
+
+    modalReadReview.style.display = "block";
 }

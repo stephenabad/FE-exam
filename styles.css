@@ -113,6 +113,12 @@
     padding-left: 5px;
 }
 
+.read-review span:hover{
+    color: #ffe78e;
+    text-decoration: none;
+    cursor: pointer;
+}
+
 .user-input{
     position: relative;
 }
@@ -188,7 +194,7 @@
     color: #919aa2
 }
 
-.modal-btn{
+.oc-modal-btn{
     background: none!important;
     border: none;
     padding: 0!important;
@@ -258,4 +264,17 @@
     color: #154370;
     margin-top: 7px;
     margin-bottom: 7px;
+}
+
+.review-initials{
+    font-family: 'Gotham-Book';
+    font-size: 25px;
+    margin: 0;
+}
+
+.review-location{
+    font-family: 'Gotham-Book';
+    font-size: 14px;
+    color: #979da3;
+    margin: 0;
 }

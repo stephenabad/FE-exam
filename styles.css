@@ -137,7 +137,6 @@
     border: none;
     padding-left: 5rem;
     font-family: 'Gotham-Book';
-    font-weight: bold;
     font-size: 15px;
 }
 
@@ -156,7 +155,6 @@
     border: none;
     padding-left: 5rem;
     font-family: 'Gotham-Book';
-    font-weight: bold;
     font-size: 15px;
     color: #747474
 }
@@ -304,4 +302,23 @@
     border-radius: 25px;
     height: 50px;
     width: 250px;
+}
+
+.auto-suggest{
+    position: absolute;
+    list-style-type: none;
+    list-style-position: inside;
+    margin: 0 0 0 -2%;
+    width: 250px;
+    display: none;
+}
+
+.auto-suggest-items{
+    background-color: white;
+    color: #474747;
+    font-family: 'Gotham-Book';
+    font-size: 15px;
+    padding: 10px;
+    border: 1px solid gray;
+    cursor: pointer;
 }

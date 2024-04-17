@@ -49,8 +49,8 @@ function generateCategories(){
         "Vivamus scelerisque tellus", "Phasellus sed", "Curabitur eu", "Proin sodales",
         "Vestibulum sit amet", "Etiam eleifend", "Cras malesuada nisi", "Aenean", "Nunc eget augue"
     ];
-    for (var i = 0; i < otherCategoriesArr.length; i++){
-        var newCategory = document.createElement('li');
+    for (let i = 0; i < otherCategoriesArr.length; i++){
+        let newCategory = document.createElement('li');
         newCategory.append(otherCategoriesArr[i]);
         categoryDiv.appendChild(newCategory);
     }
@@ -62,8 +62,8 @@ function generateCategories(){
         "Government", "Intellectual Property"
     ]
 
-    for (var i = 0; i < legalCategoriesArr.length; i++){
-        var newCategory = document.createElement('option');
+    for (let i = 0; i < legalCategoriesArr.length; i++){
+        let newCategory = document.createElement('option');
         newCategory.className = "selected-items";
         newCategory.append(legalCategoriesArr[i]);
         legalCategoryElem.appendChild(newCategory);
@@ -93,6 +93,47 @@ function readReview(lawyer) {
 }
 
 function findLawyerModal(){
-    
     modalFindLawyer.style.display = "block";
+}
+
+//autocomplete implementation
+var zipCodeInput = document.getElementById("zipCodeInput");
+var autoSuggest = document.getElementById("autoSuggest");
+const zipCodes = ["Nowheresville, XX 00000"];
+
+zipCodeInput.addEventListener("keyup", (e) => {
+    //clear all items
+    removeZipCodeElements();
+    //turn everything lowercase and see if match
+    for(let i = 0; i < zipCodes.length; i++){
+        if(zipCodes[i].toLowerCase().includes(zipCodeInput.value.toLowerCase()) && zipCodeInput.value != ""){
+            let listItem = document.createElement("li");
+            listItem.classList.add("auto-suggest-items");
+            listItem.setAttribute("onclick", "confirmAutoSuggest('" + zipCodes[i] + "')");
+            //style matched string
+            let matched_word_index = zipCodes[i].indexOf(zipCodeInput.value);
+            let styling = "<b style='color: #154370;'>" + zipCodes[i].substring(matched_word_index, matched_word_index + zipCodeInput.value.length) + '</b>'
+            let suggested_result = zipCodes[i].replace(zipCodeInput.value, styling);
+            console.log(suggested_result);
+            listItem.innerHTML = suggested_result;
+            autoSuggest.appendChild(listItem);
+            //show ul
+            autoSuggest.style.display = "block";
+            break; 
+        } else{
+            autoSuggest.style.display = "none";
+        }
+    }
+})
+
+function removeZipCodeElements(){
+    let items = document.querySelectorAll(".auto-suggest-items");
+    items.forEach((item) => {
+        item.remove();
+    })
+}
+
+function confirmAutoSuggest(value){
+    zipCodeInput.value = value;
+    removeZipCodeElements();
 }

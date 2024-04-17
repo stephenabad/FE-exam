@@ -99,7 +99,7 @@ function findLawyerModal(){
 //autocomplete implementation
 var zipCodeInput = document.getElementById("zipCodeInput");
 var autoSuggest = document.getElementById("autoSuggest");
-const zipCodes = ["Nowheresville, XX 00000"];
+const zipCodes = ["Nowheresville, XX 00000", "Somewhere, YY 005000"];
 
 zipCodeInput.addEventListener("keyup", (e) => {
     //clear all items
@@ -119,7 +119,6 @@ zipCodeInput.addEventListener("keyup", (e) => {
             autoSuggest.appendChild(listItem);
             //show ul
             autoSuggest.style.display = "block";
-            break; 
         } else{
             autoSuggest.style.display = "none";
         }

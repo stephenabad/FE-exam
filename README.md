@@ -32,6 +32,12 @@ This screen will appear when you click the link next to "Can't find your categor
 
 ![Screenshot](assets/README_images/other_categories.png)
 
+## Read Review
+
+You can go read a review in more detail if you click the "Read Review" link in the corresponding lawyer review.
+
+![Screenshot](assets/README_images/read_review.png)
+
 ## Used libraries
 
 Libraries used for this project are as follows:

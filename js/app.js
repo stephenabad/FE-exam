@@ -118,11 +118,12 @@ zipCodeInput.addEventListener("keyup", (e) => {
             listItem.innerHTML = suggested_result;
             autoSuggest.appendChild(listItem);
             //show ul
-            autoSuggest.style.display = "block";
+            
         } else{
             autoSuggest.style.display = "none";
         }
     }
+    autoSuggest.style.display = "block";
 })
 
 function removeZipCodeElements(){
